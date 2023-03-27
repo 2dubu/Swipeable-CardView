@@ -11,6 +11,9 @@
 		C65F6EFB29D1EB5700559F84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F6EFA29D1EB5700559F84 /* ContentView.swift */; };
 		C65F6EFD29D1EB5900559F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C65F6EFC29D1EB5900559F84 /* Assets.xcassets */; };
 		C65F6F0029D1EB5900559F84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C65F6EFF29D1EB5900559F84 /* Preview Assets.xcassets */; };
+		C65F6F0729D1F19F00559F84 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F6F0629D1F19F00559F84 /* Double+Extension.swift */; };
+		C65F6F0929D1F47E00559F84 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F6F0829D1F47E00559F84 /* CardView.swift */; };
+		C65F6F0B29D1F8E100559F84 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F6F0A29D1F8E100559F84 /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		C65F6EFA29D1EB5700559F84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C65F6EFC29D1EB5900559F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C65F6EFF29D1EB5900559F84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C65F6F0629D1F19F00559F84 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		C65F6F0829D1F47E00559F84 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C65F6F0A29D1F8E100559F84 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,10 @@
 			children = (
 				C65F6EF829D1EB5700559F84 /* Swipable_CardViewApp.swift */,
 				C65F6EFA29D1EB5700559F84 /* ContentView.swift */,
+				C65F6F0829D1F47E00559F84 /* CardView.swift */,
 				C65F6EFC29D1EB5900559F84 /* Assets.xcassets */,
+				C65F6F0629D1F19F00559F84 /* Double+Extension.swift */,
+				C65F6F0A29D1F8E100559F84 /* AppColor.swift */,
 				C65F6EFE29D1EB5900559F84 /* Preview Content */,
 			);
 			path = "Swipable-CardView";
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65F6F0729D1F19F00559F84 /* Double+Extension.swift in Sources */,
+				C65F6F0B29D1F8E100559F84 /* AppColor.swift in Sources */,
 				C65F6EFB29D1EB5700559F84 /* ContentView.swift in Sources */,
+				C65F6F0929D1F47E00559F84 /* CardView.swift in Sources */,
 				C65F6EF929D1EB5700559F84 /* Swipable_CardViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
