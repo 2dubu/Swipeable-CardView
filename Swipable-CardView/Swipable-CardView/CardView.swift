@@ -1,10 +1,3 @@
-//
-//  CardView.swift
-//  Swipable-CardView
-//
-//  Created by 이건우 on 2023/03/28.
-//
-
 import SwiftUI
 
 enum CardState {
@@ -20,6 +13,8 @@ struct CardView: View {
     @State private var lastCardState: CardState = .empty
     
     var cardAlpha: Double = 1.0
+    var imageName: String
+    var swipeAction: () -> Void
     
     private func getIconName(state: CardState) -> String {
         switch state {
@@ -41,7 +36,7 @@ struct CardView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/) {
-                Image("cat1")
+                Image(imageName)
                     .resizable()
                     .frame(width: geometry.size.width * 0.8, height: geometry.size.width * CardViewConsts.cardRatio * 0.8)
                     .aspectRatio(contentMode: .fill)
@@ -89,6 +84,9 @@ struct CardView: View {
                         lastCardState = setCardState(offset: gesture.translation.width)
                     }
                     .onEnded { gesture in
+                        if motionScale == 1 {
+                            withAnimation { swipeAction() }
+                        }
                         translation = .zero
                         motionScale = 0.0
                     }
@@ -116,16 +114,4 @@ private struct CardViewConsts {
     static let springBlendDur: Double = 0.3
     
     static let iconSize: CGSize = CGSize(width: 96.0, height: 96.0)
-}
-
-struct CardView_Previews: PreviewProvider {
-    static var previews: some View {
-        VStack {
-            CardView()
-                .padding()
-                .offset(y: 190)
-        }
-        .background(Color.gray)
-        .edgesIgnoringSafeArea(.all)
-    }
 }
